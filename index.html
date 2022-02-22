@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="./index.js" defer></script>
+    <title>Lottery</title>
+</head>
+<style>
+body {
+    background-image: url(./images/lottery.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    margin-top:70px;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    margin-left: 90px;
+    margin-top: 10px;
+    width: 160px;
+}
+#number{
+    padding: 7px;
+    border-radius: 5px;
+    border-color:#877238 ;
+}
+input[type=number]{
+    transition: 0.5s;
+    outline: none;
+}
+input[type=number]:focus{
+    border: 3px dotted #877238 ;
+}
+button{
+    color: #fff;
+    background-color: #877238;
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="container">
+        <input type="number" name="number" id="number" max="8" min="1">
+        <button type="submit" id="number">Lucky Numbers</button>
+        <div id="lottery"></div>
+    </div>
+</body>
+</html>
